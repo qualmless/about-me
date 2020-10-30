@@ -7,36 +7,70 @@
     --purple: #b39eaf;
     --teal: #70d6d6;
     --ada-purple:#6B5667;
+    --honey: #FFAE03;
+    --darkhoney: #c08403;
+    --forest: #394648;
   }
 
-
+/* ---------body styles ------------------------------------------- */
 body {
-    background: var(--grink);
+    background: var(--grey);
     font-family: 'PT Mono', monospace;
+    padding: 50px;
 }
 
 
 /* holds all body text */
 main {
+    /* position: relative; */
+    /* float: right; */
     background: var(--light-pink);
     color: var(--ada-purple);
     /* margin horizontally centers, creates space around container */
-    margin: 20px auto auto  ;
+    /* margin: 20px auto auto 50px  ; */
+    margin: auto auto 50px auto;
     /* padding creates space within the container */
     padding: 120px;
     width: 50%;
     height: auto;
+    border: solid 5px var(--honey);
     border-radius: 330px 330px 0 0;
+    box-shadow: -15px 22px 30px 2px var(--rose);
 }
 
-.left-col{
+header{
     float: left;
+    margin-left: 40px;
 }
 
+#navcircle{
+    position: relative;
+    float: right;
+    /* margin: 10px 10px 10px 10px; */
+    margin: auto;
+    border: 1px solid var(--darkhoney);
+    border-radius: 140px;
+    padding: 20px 50px;
+    background-color: var(--honey);
+}
+
+#navcircleh2 {
+    color: #FFF0F2;
+    text-align: center;
+}
+
+/* -------------element styles ---------------------------------------------------------------- */
 h1 {
     color: var(--hot-pink);
+    font-size: 4rem;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
+strong {
+    color: var(--rose);
+}
+
+/*------------------------ links -------------------------------------------*/
 a {
     border: solid var(--teal) 2px;
     padding: 5px;
@@ -49,13 +83,18 @@ a:hover {
 }
 
 .listlinks {
-    border: solid var(--teal) 2px;
+    border: none;
     padding: 2px;
-    color: var(--teal);
+    color: var(--light-pink);
 }
 
 .listlinks:hover{
     color: var(--hot-pink);
+}
+
+ol {
+    list-style: circle;
+    color: var(--light-pink);
 }
 
 li{
@@ -74,15 +113,20 @@ li{
 img {
     width: 200px;
     border-radius: 100px;
-    margin: 30px;
+    /* margin: 30px; */
+}
+
+#selfie {
+    margin: 40px;
 }
 
 section {
     padding: 20px;
-    margin: 10px;
+    margin: 40px;
     background-color: var(--grink);
-    border: solid var(--hot-pink) 2px;
-    border-radius: 0 30px 30px 30px;
+    border: none var(--hot-pink) 2px;
+    border-top: 2px var(--grey) solid;
+    border-radius: 30px;
 }
 
 #section1 {
@@ -95,4 +139,20 @@ section {
 
 #clearFix{
     clear: both;
+}
+/* -----------------------------------form -------------------------------------------------------------------------------------*/
+button {
+    background-color: var(--light-pink);
+    border-radius: 30px;
+    color: var(--hot-pink);
+    border: 3px solid var(--hot-pink);
+}
+
+button:active {
+    padding: 4px;
+}
+
+input {
+    background-color: var(--light-pink);
+    color: var(--hot-pink);
 }
