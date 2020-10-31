@@ -41,7 +41,7 @@ main {
 header{
     float: left;
     position: relative;
-    margin-left: 40px;
+    margin: 0 0 40px 40px;
 }
 
 #navcircle{
@@ -119,11 +119,8 @@ li{
 .right-col{
     float: right;
     position: relative;
-}
-
-#under-belly {
-    /* margin-top: 60%; */
-    clear: both;
+    /* width: 200px; */
+    border-radius: 100px;
 }
 
 img {
@@ -132,8 +129,12 @@ img {
     /* margin: 30px; */
 }
 
+#under-belly {
+    /* margin-top: 60%; */
+    clear: both;
+}
 #selfie {
-    margin: 40px;
+    margin: 1px;
 }
 
 section {
