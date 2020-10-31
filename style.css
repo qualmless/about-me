@@ -30,7 +30,7 @@ main {
     /* margin: 20px auto auto 50px  ; */
     margin: auto auto 50px auto;
     /* padding creates space within the container */
-    padding: 120px;
+    padding: 8%;
     width: 50%;
     height: auto;
     border: solid 5px var(--teal);
@@ -40,11 +40,12 @@ main {
 
 header{
     float: left;
+    position: relative;
     margin-left: 40px;
 }
 
 #navcircle{
-    position: absolute;
+    position: fixed;
     float: right;
     /* margin: 10px 10px 10px 10px; */
     margin: auto;
@@ -117,6 +118,7 @@ li{
 
 .right-col{
     float: right;
+    position: relative;
 }
 
 #under-belly {
