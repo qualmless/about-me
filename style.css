@@ -33,9 +33,9 @@ main {
     padding: 120px;
     width: 50%;
     height: auto;
-    border: solid 5px var(--honey);
+    border: solid 5px var(--teal);
     border-radius: 330px 330px 0 0;
-    box-shadow: -15px 22px 30px 2px var(--rose);
+    box-shadow: -15px 22px 0px 1px var(--rose);
 }
 
 header{
@@ -44,14 +44,26 @@ header{
 }
 
 #navcircle{
-    position: relative;
+    position: absolute;
     float: right;
     /* margin: 10px 10px 10px 10px; */
     margin: auto;
-    border: 1px solid var(--darkhoney);
+    right: 90px;
+    /* border: 1px solid var(--darkhoney); */
     border-radius: 140px;
     padding: 20px 50px;
-    background-color: var(--honey);
+    background-color: var(--teal);
+    width: 15%;
+    /* padding-top: 10%;      */
+    /* box-shadow: -15px 22px 30px 2px var(--rose) ; */
+}
+
+.innershadow {
+    box-shadow: inset 0 0 10px var(--rose);
+}
+
+.boxyshadow {
+    box-shadow: -3px 5px 0 2px var(--ada-purple);
 }
 
 #navcircleh2 {
@@ -73,9 +85,11 @@ strong {
 /*------------------------ links -------------------------------------------*/
 a {
     border: solid var(--teal) 2px;
+    color: var(--teal);
     padding: 5px;
     border-radius: 10px;
     text-decoration: none;
+    box-shadow: -5px 5px 0 0 var(--teal);
 }
 
 a:hover {
@@ -121,7 +135,7 @@ img {
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 40px;
     background-color: var(--grink);
     border: none var(--hot-pink) 2px;
@@ -146,6 +160,7 @@ button {
     border-radius: 30px;
     color: var(--hot-pink);
     border: 3px solid var(--hot-pink);
+    box-shadow: -5px 5px 0 0 var(--rose);
 }
 
 button:active {
@@ -155,4 +170,6 @@ button:active {
 input {
     background-color: var(--light-pink);
     color: var(--hot-pink);
+    border: 3px solid var(--hot-pink);
+    padding: 4px;
 }
